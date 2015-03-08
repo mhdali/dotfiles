@@ -11,7 +11,7 @@ make
 
 To Deploy the commited changes you need to run:
 
-```
+```bash
 make deploy
 ```
 
