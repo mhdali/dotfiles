@@ -24,4 +24,4 @@ make test
 ToDo:
 
 - [ ] i3 low battery notification
-- [ ] Add i3status to my home config directory
+- [x] Add i3status to my home config directory
