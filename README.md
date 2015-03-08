@@ -25,3 +25,4 @@ ToDo:
 
 - [ ] i3 low battery notification
 - [x] Add i3status to my home config directory
+- [ ] i3 screenshot binding with imagemagick package
