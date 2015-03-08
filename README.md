@@ -2,7 +2,7 @@
 
 First thing first you need to backup you current configuration before it's too late :S
 
-```
+```bash
 make
 ```
 
@@ -17,6 +17,11 @@ make deploy
 
 If you made any changes and you want to test them before commiting them to git repo you need to run:
 
-```
+```bash
 make test
 ```
+
+ToDo:
+
+- [ ] i3 low battery notification
+- [ ] Add i3status to my home config directory
