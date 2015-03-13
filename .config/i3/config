@@ -162,7 +162,7 @@ bindsym XF86AudioMute exec amixer -q set Master toggle
 
 # Binding lock, logout, suspend, hibernate, reboot and shutdown
 # https://wiki.archlinux.org/index.php/i3#Shutdown.2C_reboot.2C_lock_screen
-set $Locker i3lock && sleep 1
+set $Locker i3lock-wrapper && sleep 1
 
 set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
 mode "$mode_system" {
