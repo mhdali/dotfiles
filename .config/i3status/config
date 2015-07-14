@@ -11,6 +11,7 @@ general {
         interval = 5
 }
 
+order += "pomodoro"
 order += "disk /"
 order += "disk /home"
 order += "run_watch DHCP"
@@ -72,4 +73,7 @@ volume master {
 
 cpu_temperature 0 {
         format = "T: %degrees °C"
+}
+
+pomodoro {
 }
