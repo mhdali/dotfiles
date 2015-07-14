@@ -16,6 +16,7 @@ set $mod Mod4
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 font pango:DejaVu Sans Mono 7
+
 # Before i3 v4.8, we used to recommend this one as the default:
 # font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 # The font above is very space-efficient, that is, it looks good, sharp and
@@ -23,9 +24,14 @@ font pango:DejaVu Sans Mono 7
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
+# Auto start programs
+
+exec --no-startup-id urxvtd -q -f -o
+
 # start a terminal
 #bindsym $mod+Return exec i3-sensible-terminal
-bindsym $mod+Return exec terminology
+#bindsym $mod+Return exec terminology
+bindsym $mod+Return exec urxvtc
 
 # kill focused window
 bindsym $mod+Shift+q kill
