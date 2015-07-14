@@ -47,8 +47,8 @@ URxvt.keysym.Ctrl-Right:   \033[1;5C
 !URxvt.font: xft:Courier-10
 
 !Inconsolata
-URxvt.font: xft:Inconsolata-11
-URxvt.boldFont: xft:Inconsolata-12
+URxvt.font: xft:Inconsolata-10
+URxvt.boldFont: xft:Inconsolata-11
 URxvt.letterSpace: -1
 
 !Inconsolata-g
