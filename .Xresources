@@ -13,7 +13,7 @@ URxvt.urgentOnBell: False
 URxvt.cursorBlink: False
 
 ! Extensions
-URxvt.perl-ext-common: default,clipboard,keyboard-select,url-select,vtwheel
+URxvt.perl-ext-common: default,clipboard,keyboard-select,url-select,vtwheel,font-size
 URxvt.urlLauncher: xdg-open
 URxvt.urlButton: 1
 URxvt.underlineURLs: True
@@ -43,6 +43,8 @@ URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
 URxvt.keysym.M-Escape: perl:keyboard-select:activate
 URxvt.keysym.C-Escape: perl:keyboard-select:activate
 URxvt.keysym.M-u: perl:url-select:select_next
+URxvt.keysym.C-Up:     perl:font-size:increase
+URxvt.keysym.C-Down:   perl:font-size:decrease
 
 ! Ctrl+Arrow keys
 URxvt.keysym.Ctrl-Up:      \033[1;5A
