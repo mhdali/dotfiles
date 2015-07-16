@@ -11,6 +11,7 @@ URxvt.secondaryScroll: 0
 URxvt.termName: xterm-256color
 URxvt.urgentOnBell: False
 URxvt.cursorBlink: False
+URxvt.iso14755: False
 
 ! Extensions
 URxvt.perl-ext-common: default,clipboard,keyboard-select,url-select,vtwheel,font-size
@@ -34,12 +35,8 @@ URxvt.url-select.underline: true
 ! Keybindings
 !!!!!!!!!!!!!!!
 
-URxvt.keysym.Mod4-c: perl:clipboard:copy
-URxvt.keysym.Mod4-v: perl:clipboard:paste
-URxvt.keysym.Mod4-C-v: perl:clipboard:paste_escaped
-URxvt.keysym.M-c: perl:clipboard:copy
-URxvt.keysym.M-v: perl:clipboard:paste
-URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
+URxvt.keysym.Shift-Control-C: perl:clipboard:copy
+URxvt.keysym.Shift-Control-V: perl:clipboard:paste
 URxvt.keysym.M-Escape: perl:keyboard-select:activate
 URxvt.keysym.C-Escape: perl:keyboard-select:activate
 URxvt.keysym.M-u: perl:url-select:select_next
