@@ -26,6 +26,12 @@ URxvt.pasteCommand: xclip -o -selection clipboard
 ! URxvt*.shading: 0 to 99 darkens, 101 to 200 lightens
 !URxvt*.shading: 15
 
+! Yankable URLs
+URxvt.perl-ext: default,url-select
+URxvt.keysym.M-u: perl:url-select:select_next
+URxvt.url-select.launcher: /usr/bin/xdg-open
+URxvt.url-select.underline: true
+
 !!!!!!!!!!!!!!!
 ! Keybindings
 !!!!!!!!!!!!!!!
