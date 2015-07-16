@@ -8,7 +8,7 @@ URxvt.scrollBar: False
 URxvt.scrollstyle: rxvt
 URxvt.secondaryScreen: 1
 URxvt.secondaryScroll: 0
-URxvt.termName: xterm-256color
+URxvt.termName: rxvt-unicode
 URxvt.urgentOnBell: False
 URxvt.cursorBlink: False
 URxvt.iso14755: False
