@@ -14,7 +14,7 @@ URxvt.cursorBlink: False
 URxvt.iso14755: False
 
 ! Extensions
-URxvt.perl-ext-common: default,clipboard,keyboard-select,url-select,vtwheel,font-size,confirm-paste
+URxvt.perl-ext-common: default,clipboard,keyboard-select,url-select,vtwheel,font-size,confirm-paste,searchable-scrollback
 URxvt.urlLauncher: xdg-open
 URxvt.urlButton: 1
 URxvt.underlineURLs: True
