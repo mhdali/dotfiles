@@ -44,8 +44,8 @@ URxvt.keysym.C-Up:     perl:font-size:increase
 URxvt.keysym.C-Down:   perl:font-size:decrease
 
 ! Ctrl+Arrow keys
-URxvt.keysym.Ctrl-Left:    \033[1;5D
-URxvt.keysym.Ctrl-Right:   \033[1;5C
+URxvt.keysym.C-Left:    \033[1;5D
+URxvt.keysym.C-Right:   \033[1;5C
 
 !!!!!!!!!!!!!!!
 ! Fonts
