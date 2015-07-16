@@ -6,6 +6,8 @@
 URxvt.saveLines: 2000
 URxvt.scrollBar: False
 URxvt.scrollstyle: rxvt
+URxvt.secondaryScreen: 1
+URxvt.secondaryScroll: 0
 URxvt.termName: xterm-256color
 URxvt.urgentOnBell: False
 URxvt.cursorBlink: False
