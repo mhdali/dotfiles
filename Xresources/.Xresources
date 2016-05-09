@@ -87,6 +87,7 @@ URxvt.letterSpace: -1
 !Terminus
 !URxvt.font: xft:Terminus-10
 
+URxvt.lineSpace: 1
 
 !!!!!!!!!!!!!!!
 ! XTerm
