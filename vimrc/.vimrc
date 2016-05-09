@@ -25,6 +25,7 @@ Plugin 'Glench/Vim-Jinja2-Syntax'
 Plugin 'parkr/vim-jekyll'
 Plugin 'tpope/vim-fugitive'
 Plugin 'morhetz/gruvbox'
+Plugin 'terryma/vim-multiple-cursors'
 call vundle#end()
 
 
