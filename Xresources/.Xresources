@@ -3,7 +3,7 @@
 !!!!!!!!!!!!!!!
 
 ! General settings
-URxvt.saveLines: 2000
+URxvt.saveLines: 10000
 URxvt.scrollBar: False
 URxvt.scrollstyle: rxvt
 URxvt.secondaryScreen: 1
