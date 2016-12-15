@@ -6,6 +6,7 @@
 URxvt.saveLines: 10000
 URxvt.scrollBar: False
 URxvt.scrollstyle: rxvt
+URxvt*scrollTtyOutput: false
 URxvt.secondaryScreen: 1
 URxvt.secondaryScroll: 0
 URxvt.termName: rxvt-unicode
