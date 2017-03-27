@@ -32,3 +32,14 @@ For config files that should located under `/etc` directory, you need to do it w
 ```
 sudo stow -t /etc/ -v resolvconf
 ```
+
+## vim
+
+For vim we need to install plugin manager `Vundle` to install all configured plusings.
+
+```
+stow -t $HOME -v vimrc
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+vim
+:PluginInstall
+```
