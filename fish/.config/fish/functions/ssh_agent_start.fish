@@ -6,6 +6,7 @@ function ssh_agent_start
         chmod 600 $SSH_ENV
         . $SSH_ENV > /dev/null
         ssh-add
+        pgrep ssh-agent > $HOME/.ssh/pid
     end
 
     function test_identities
@@ -20,8 +21,7 @@ function ssh_agent_start
 
     setenv SSH_ENV $HOME/.ssh/environment
     if [ -n "$SSH_AGENT_PID" ]
-        ps -ef | grep $SSH_AGENT_PID | grep ssh-agent > /dev/null
-        if [ $status -eq 0 ]
+        if test (pgrep ssh-agent) -eq (cat $HOME/.ssh/pid)
             test_identities
         end
     else
