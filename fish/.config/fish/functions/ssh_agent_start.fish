@@ -21,7 +21,7 @@ function ssh_agent_start
 
     setenv SSH_ENV $HOME/.ssh/environment
     if [ -n "$SSH_AGENT_PID" ]
-        if test (pgrep ssh-agent) -eq (cat $HOME/.ssh/pid)
+        if test "(pgrep ssh-agent)" = "(cat $HOME/.ssh/pid)"
             test_identities
         end
     else
