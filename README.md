@@ -43,3 +43,8 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim
 :PluginInstall
 ```
+
+For Terraform plugin you need to install this
+```
+go get github.com/fatih/hclfmt
+```

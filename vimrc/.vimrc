@@ -27,6 +27,7 @@ Plugin 'parkr/vim-jekyll'
 Plugin 'tpope/vim-fugitive'
 Plugin 'morhetz/gruvbox'
 Plugin 'terryma/vim-multiple-cursors'
+Plugin 'fatih/vim-hclfmt'
 call vundle#end()
 
 set autoindent
@@ -83,3 +84,6 @@ if executable('rg')
   let g:ctrlp_user_command = 'rg %s --files --color=never --glob ""'
   let g:ctrlp_use_caching = 0
 endif
+
+" Terraform
+let g:tf_fmt_autosave = 1
