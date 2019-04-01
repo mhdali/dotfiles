@@ -15,11 +15,12 @@ set autoindent
 set rtp+=~/.vim/bundle/Vundle.vim
 
 call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'nelstrom/vim-textobj-rubyblock'
 Plugin 'tpope/vim-sensible'
 Plugin 'kana/vim-textobj-user'
-Plugin 'kien/ctrlp.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'bling/vim-airline'
 Plugin 'Glench/Vim-Jinja2-Syntax'
 Plugin 'parkr/vim-jekyll'
@@ -27,7 +28,6 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'morhetz/gruvbox'
 Plugin 'terryma/vim-multiple-cursors'
 call vundle#end()
-
 
 set autoindent
 set backspace=indent,eol,start
@@ -77,3 +77,9 @@ autocmd BufNewFile,BufRead *.sls setlocal filetype=sls
 
 vnoremap // y/<C-R>"<CR>
 nnoremap <Leader>t :CtrlPBuffer<CR>
+
+if executable('rg')
+  set grepprg=rg\ --color=never
+  let g:ctrlp_user_command = 'rg %s --files --color=never --glob ""'
+  let g:ctrlp_use_caching = 0
+endif
