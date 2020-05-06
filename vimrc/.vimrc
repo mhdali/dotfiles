@@ -10,8 +10,6 @@ filetype on           " Enable filetype detection
 filetype plugin on    " Enable filetype-specific plugins
 autocmd FileType ruby compiler ruby
 
-set autoindent
-
 set rtp+=~/.vim/bundle/Vundle.vim
 
 call vundle#begin()
@@ -34,11 +32,13 @@ Plugin 'fatih/vim-hclfmt'
 Plugin 'hashivim/vim-terraform'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'juliosueiras/vim-terraform-completion'
+Plugin 'sotte/presenting.vim'
 call vundle#end()
 
 set autoindent
+set smartindent
 set backspace=indent,eol,start
-set cindent " set smartindent
+"set cindent " set smartindent
 set cmdheight=2
 set cursorcolumn
 set cursorline
@@ -74,11 +74,11 @@ highlight   Search        term=reverse cterm=bold ctermbg=11 ctermfg=0
 highlight   Visual        term=NONE    cterm=bold ctermbg=10 ctermfg=8
 
 autocmd Filetype ruby setlocal ts=2 sw=2 expandtab
-autocmd Filetype yaml setlocal ts=2 sw=2 expandtab
+autocmd Filetype yaml setlocal ts=2 sts=2 sw=2 expandtab
 autocmd Filetype sls setlocal ts=2 sw=2 expandtab
 autocmd Filetype jinja setlocal ts=2 sw=2 expandtab
 autocmd Filetype sh setlocal ts=2 sw=2 expandtab
-autocmd Filetype groovy setlocal ts=4 sw=4 expandtab
+autocmd Filetype groovy setlocal ts=2 sw=2 expandtab
 
 autocmd BufNewFile,BufRead *.yml setlocal filetype=yaml
 autocmd BufNewFile,BufRead *.jinja setlocal filetype=jinja
