@@ -1,4 +1,3 @@
-"let $PYTHONPATH='/usr/lib/python3.4/site-packages'
 set laststatus=2
 set backupcopy=no
 
@@ -132,3 +131,7 @@ let g:UltiSnipsJumpBackwardTrigger="<C-z>"
 
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
+
+" Python
+let g:syntastic_python_checkers=['flake8']
+let g:syntastic_python_python_exec = 'python3'
