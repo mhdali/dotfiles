@@ -64,7 +64,8 @@ set showmatch
 "set t_Co=256
 "set tags=tags;/
 "set virtualedit=block
-"set wrap
+set wrap
+set colorcolumn=80
 
 highlight   CursorColumn  term=NONE    cterm=none ctermbg=232
 highlight   CursorLine    term=NONE    cterm=bold ctermbg=8
